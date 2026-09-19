@@ -1,0 +1,41 @@
+# Cursor / Copilot Rules for Echo-Boma
+
+You are helping build Echo-Boma – a cultural learning + peer problem-solving + research platform for teens (13–19).
+
+## Core Principles (never violate)
+
+1. **Equality • Connection • Motivation** are the product values.
+2. Cultural wisdom (Sankore, Ubuntu, Kaizen, Nalanda, Indigenous knowledge…) and technological studies are integrated, never separate silos.
+3. Every cultural lesson ends with a practical tech action; every tech lesson ends with a cultural reflection.
+4. Offline-first and low-data design are mandatory for core flows.
+5. Safety and privacy for minors are non-negotiable (moderation, consent, age-appropriate design).
+6. Accessibility (sign language path, voice, subtitles, local languages) must be considered in every UI.
+
+## Technical Preferences
+
+- Flutter for client (Android-first).
+- Strong typing, clear separation of concerns.
+- Feature flags for incomplete features.
+- Content (modules, help videos) loaded from versioned packs, not hard-coded.
+- Soft deletes + recoverable bin for user content.
+- Automatic save of progress wherever the user is creating content.
+
+## When generating code
+
+- Prefer readable, well-named code over clever one-liners.
+- Add comments only where intent is non-obvious.
+- Always consider offline / low-connectivity case.
+- Never introduce unmoderated private 1:1 video for younger users by default.
+- Keep the 10 main segments and global Search consistent with docs/FEATURE_MAP.md.
+- Respect the phased roadmap in docs/PRODUCT_REQUIREMENTS.md (do not implement Phase 2/3 features as if they are MVP).
+
+## Documentation
+
+- When adding a major feature, update the relevant doc in /docs.
+- Keep README.md vision statement accurate.
+
+## Tone of UI copy
+
+- Encouraging, respectful, celebrates small wins.
+- Clear about limits and community guidelines.
+- Never condescending.
